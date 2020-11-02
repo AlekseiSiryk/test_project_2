@@ -1,6 +1,5 @@
 import * as axios from 'axios';
 
-//const root = 'http://142.93.134.108:1111';
 const root = axios.create({baseURL: 'http://142.93.134.108:1111/'})
 export const signIn = (email, pass, setMsg, history) => {
   const reqStr = `login?email=${email}&password=${pass}`;
